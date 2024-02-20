@@ -13,8 +13,19 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
         public $icon;
         public $type;
 
-        public function printInfo() {
-            
+        public function __construct(
+            $name,
+            $image = null,
+            $price = null,
+            $icon = null,
+            $type = null,
+        ) {
+            $this->name = $name;
+            $this->image = $image;
+            $this->price = $price;
+            $this->icon = $icon;
+            $this->type = $type;
+
         }
     }
 ?>
